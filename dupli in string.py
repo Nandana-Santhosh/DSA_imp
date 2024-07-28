@@ -15,3 +15,14 @@ def dupli(string):
  
     return duplicates
 print(dupli("hello world"))
+
+
+#another approach
+
+def dupli(string):
+    new=[]
+    for i in string:
+        if i  not in new and string.count(i)>1:
+            new.append(i)
+    return new
+print(dupli("Nandana Santhosh"))
